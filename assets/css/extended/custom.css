@@ -1,10 +1,12 @@
 @media (prefers-color-scheme: light) {
     :root {
-        --color-home: rgb(255 255 255);
-        --color-card: rgb(255 255 255);
-        --color-subtle: rgb(240 240 240);
+        --color-home: rgb(238 231 221);
+        --entry: rgb(249 245 242);
+        --border: rgb(231 221 202);
+        --color-subtle: rgb(217, 129, 129);
+        --color-secondary: rgb(124, 143, 249);
         --color-text: rgb(0 0 0);
-        --color-reader: rgb(255 255 255);
+        --color-reader: rgb(249 245 242);
     }
 }
 
@@ -15,6 +17,7 @@
 
 :root {
     --gap: 5%;
+    --radius: 10px;
     --font-serif: "Noto Serif", "EB Garamond", 'Times New Roman', serif;
 }
 
@@ -26,15 +29,16 @@ li {
 div.post-meta {
     margin-top: 2ch;
     margin-bottom: 8ch;
+    color: var(--color-secondary)
 }
 
 .logo a {
     font-family: var(--font-serif);
-    color: grey
+    color: var(--color-secondary)
 }
 
 footer.footer {
-    color: grey;
+    color: var(--color-subtle)
 }
 
 body.list nav.nav {
@@ -51,4 +55,30 @@ body {
 
 #top>header>nav>div>a>img {
     display: none;
+}
+
+#top > main > article.first-entry.home-info {
+    padding: var(--gap);
+}
+
+div.breadcrumbs,
+div.breadcrumbs a {
+ color: var(--color-subtle);
+}
+
+div.entry-content{
+    color: var(--color-subtle)
+}
+
+footer.entry-footer {
+    color: var(--color-secondary);
+}
+
+.list {
+    background: var(--color-home)
+}
+
+.footer a,
+.footer a:hover {
+    border-bottom: none
 }
