@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alan&#39;s Blog</title>
     <link>http://localhost:1313/</link>
     <description>Recent content on Alan&#39;s Blog</description>
-    <generator>Hugo -- 0.147.6</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 May 2025 21:20:27 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
@@ -13,6 +13,13 @@
       <link>http://localhost:1313/posts/hello-world/</link>
       <pubDate>Wed, 28 May 2025 21:20:27 -0400</pubDate>
       <guid>http://localhost:1313/posts/hello-world/</guid>
+      <description>&lt;p&gt;The personalized nature of our online experiences, driven by algorithms on social media and news platforms, often leads to a phenomenon where individuals primarily encounter content that aligns with their existing interests and beliefs. This is commonly referred to as a &amp;ldquo;filter bubble.&amp;rdquo; This curated information environment is increasingly a subject of academic and legal scrutiny, both in Canada and internationally.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My 1st post</title>
+      <link>http://localhost:1313/posts/1/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <guid>http://localhost:1313/posts/1/</guid>
       <description></description>
     </item>
   </channel>

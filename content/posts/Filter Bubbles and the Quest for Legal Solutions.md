@@ -1,5 +1,5 @@
 ---
-date: '2025-05-28T21:20:27-04:00'
+date: '2025-05-29T21:20:27-04:00'
 draft: true
 title: 'Filter Bubbles and the Quest for Legal Solutions'
 ---
