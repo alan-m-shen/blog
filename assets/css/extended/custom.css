@@ -1,44 +1,19 @@
-@media (prefers-color-scheme: light) {
-    :root {
-        --color-home: rgb(238 231 221);
-        --entry: rgb(249 245 242);
-        --border: rgb(231 221 202);
-        --color-subtle: rgb(217, 129, 129);
-        --color-secondary: rgb(124, 143, 249);
-        --color-text: rgb(0 0 0);
-        --color-reader: rgb(249 245 242);
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {}
-}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 
 :root {
     --gap: 5%;
     --radius: 10px;
-    --font-serif: "Noto Serif", "EB Garamond", 'Times New Roman', serif;
+    --font-family: "Libre Baskerville", serif;
 }
 
-p,
-li {
-    font-family: var(--font-serif);
+body {
+    font-family: var(--font-family);
 }
 
 div.post-meta {
     margin-top: 2ch;
     margin-bottom: 8ch;
-    color: var(--color-secondary)
-}
-
-.logo a {
-    font-family: var(--font-serif);
-    color: var(--color-secondary)
-}
-
-footer.footer {
-    color: var(--color-subtle)
 }
 
 body.list nav.nav {
@@ -49,11 +24,7 @@ body.list .main {
     min-height: calc(100vh - var(--footer-height));
 }
 
-body {
-    background: var(--color-reader)
-}
-
-#top>header>nav>div>a>img {
+#top > header > nav > div > a > img {
     display: none;
 }
 
@@ -61,24 +32,7 @@ body {
     padding: var(--gap);
 }
 
-div.breadcrumbs,
-div.breadcrumbs a {
- color: var(--color-subtle);
-}
-
-div.entry-content{
-    color: var(--color-subtle)
-}
-
-footer.entry-footer {
-    color: var(--color-secondary);
-}
-
-.list {
-    background: var(--color-home)
-}
-
 .footer a,
 .footer a:hover {
-    border-bottom: none
+    border-bottom: none;
 }
