@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-
-
 :root {
-    --gap: 5%;
-    --radius: 10px;
+    --gap: 10vw;
+    --radius: 0px;
     --font-family: "Libre Baskerville", serif;
 }
 
@@ -12,8 +9,8 @@ body {
 }
 
 div.post-meta {
-    margin-top: 2ch;
-    margin-bottom: 8ch;
+    margin-top: 1.5rem;
+    margin-bottom: 7rem;
 }
 
 body.list nav.nav {
@@ -28,11 +25,43 @@ body.list .main {
     display: none;
 }
 
-#top > main > article.first-entry.home-info {
-    padding: var(--gap);
-}
-
 .footer a,
 .footer a:hover {
     border-bottom: none;
+}
+
+.post-entry{
+    background: none;
+    border-top: 0.2rem solid var(--primary);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 1rem 0 0 0 !important
+}
+
+body:not(.list) .post-content>p:first-of-type:first-letter {
+    float: left; /* 让首字母浮动到左侧，以便后续文本环绕 */
+    font-size: 4em; /* 增大首字母的字号，使其下沉 */
+    line-height: 1; /* 调整行高，避免额外的行间距 */
+    padding-right: 0.1em; /* 在首字母右侧添加一些间距，防止与后续文本过于接近 */
+    margin-right: 0.05em; /* 增加一点外边距 */
+    font-family: var(--font-family); /* 确保使用你想要的字体，这里沿用你的变量 */
+}
+
+footer.footer {
+    margin-bottom: 2rem;
+}
+
+main.main{
+    padding: 0 var(--gap) 0 var(--gap);
+}
+
+div.breadcrumbs,
+div.breadcrumbs a {
+    color: var(--secondary);
+}
+
+div.breadcrumbs{
+    margin-bottom: 0.8rem;
+    margin-top: 3rem;
 }
