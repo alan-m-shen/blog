@@ -1,0 +1,13 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+<div class="ht">Welcome to my blog!</div>
+<div class="slink">
+<a href="https://www.linkedin.com/in/alan-m-shen" target="_blank" rel="noopener">LinkedIn</a>
+<br>
+<a href="https://github.com/alan-m-shen" target="_blank" rel="noopener">GitHub</a>
+</div>
+</article>
+{{- end -}}

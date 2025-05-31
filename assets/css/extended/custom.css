@@ -1,5 +1,5 @@
 :root {
-    --gap: 10vw;
+    --gap: 2.5rem;
     --radius: 0px;
     --font-family: "Libre Baskerville", serif;
 }
@@ -40,20 +40,27 @@ body.list .main {
 }
 
 body:not(.list) .post-content>p:first-of-type:first-letter {
-    float: left; /* 让首字母浮动到左侧，以便后续文本环绕 */
-    font-size: 4em; /* 增大首字母的字号，使其下沉 */
-    line-height: 1; /* 调整行高，避免额外的行间距 */
-    padding-right: 0.1em; /* 在首字母右侧添加一些间距，防止与后续文本过于接近 */
-    margin-right: 0.05em; /* 增加一点外边距 */
-    font-family: var(--font-family); /* 确保使用你想要的字体，这里沿用你的变量 */
+    float: left;
+    font-size: 4em;
+    line-height: 1;
+    padding-right: 0.1em;
+    margin-right: 0.05em;
+    font-family: var(--font-family);
 }
 
 footer.footer {
     margin-bottom: 2rem;
+    padding: 0;
+    text-align: left;
+    max-width: none;
 }
 
 main.main{
-    padding: 0 var(--gap) 0 var(--gap);
+    padding: 0;
+    max-width: none;
+}
+#top > header > nav > div {
+    margin: 0;
 }
 
 div.breadcrumbs,
@@ -64,4 +71,25 @@ div.breadcrumbs a {
 div.breadcrumbs{
     margin-bottom: 0.8rem;
     margin-top: 3rem;
+}
+
+nav.nav{
+    max-width: none;
+    margin-top: 2rem;
+}
+
+html{
+  padding-left: min(10vw, 5rem);
+  padding-right: min(8vw, 4rem);
+  max-width: 60rem;
+  margin: auto;
+}
+
+.ht {
+    color: var(--secondary)
+}
+
+.slink a {
+    display: inline-block;
+    margin-top: 0.5rem;
 }
