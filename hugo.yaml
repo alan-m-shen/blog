@@ -3,6 +3,11 @@ languageCode: en-us
 title: Alan’s Blog
 theme: ["PaperMod"]
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
@@ -61,6 +66,6 @@ params:
     Title: "Alan M. Shen"
 
   cover:
-    hidden: true # hide everywhere but not in structured data
+    hidden: false # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    hiddenInSingle: false # hide on single page

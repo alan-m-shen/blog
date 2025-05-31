@@ -1,4 +1,6 @@
 ---
+cover:
+        image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/William_Blake_-_The_Temptation_and_Fall_of_Eve_%28Illustration_to_Milton%27s_%22Paradise_Lost%22%29_-_Google_Art_Project.jpg/960px-William_Blake_-_The_Temptation_and_Fall_of_Eve_%28Illustration_to_Milton%27s_%22Paradise_Lost%22%29_-_Google_Art_Project.jpg
 date: 2023-06-02
 title: |
         Sympathy for the Devil? Why We Can’t Stop Talking About Milton’s Satan

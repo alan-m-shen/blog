@@ -1,4 +1,6 @@
 ---
+cover:
+        image: https://images.newscientist.com/wp-content/uploads/2016/11/18103201/gettyimages-139800249.jpg?width=1674
 date: 2023-05-23
 title: |
         Filter Bubbles and the Quest for Legal Solutions

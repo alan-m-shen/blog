@@ -1,4 +1,6 @@
 ---
+cover:
+        image: https://upload.wikimedia.org/wikipedia/commons/2/20/Friedrich_Carl_von_Savigny_02.jpg
 date: 2021-05-25
 title: |
         The Legal GPS: How a 19th-Century Genius Taught Us to Find a Law’s “Natural Home”

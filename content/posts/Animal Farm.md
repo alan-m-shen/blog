@@ -1,4 +1,6 @@
 ---
+cover:
+        image: https://images.unsplash.com/photo-1593004647399-c7e9d4234e87?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 date: 2020-05-06
 title: |
         Meet the New Boss, Same as the Old Boss: The Enduring Warning of Animal Farm
