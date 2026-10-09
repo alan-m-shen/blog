@@ -21,10 +21,6 @@ body.list .main {
     min-height: calc(100vh - var(--footer-height));
 }
 
-#top > header > nav > div > a > img {
-    display: none;
-}
-
 .footer a,
 .footer a:hover {
     border-bottom: none;
@@ -36,7 +32,7 @@ body.list .main {
     border-bottom: none;
     border-left: none;
     border-right: none;
-    padding: 1rem 0 0 0 !important
+    padding: clamp(1rem, 3vw, 2rem) 0 0;
 }
 
 body:not(.list) .post-content>p:first-of-type:first-letter {
@@ -94,10 +90,12 @@ html{
     margin-top: 0.5rem;
 }
 
-img,
-.post-content img {
+.print-image > img,
+.print-image > a > img {
 max-height: 18rem;
+max-width: 100%;
 width: auto;
+height: auto;
 margin: 0;
 border-radius: var(--radius);
 filter: contrast(80%);
@@ -105,10 +103,11 @@ position: relative;
 z-index: 1;
 }
 
-.blend-mode-container {
+.print-image {
   position: relative;
   isolation: isolate;
   display: inline-block;
+  max-width: 100%;
   font-size: 0;
   border: 0.15rem solid var(--primary);
 }
@@ -117,7 +116,7 @@ z-index: 1;
     text-align: left;
 }
 
-.blend-mode-container::before {
+.print-image::before {
   content: '';
   position: absolute;
   top: 0;
@@ -130,7 +129,7 @@ z-index: 1;
 z-index: 2;
 }
 
-.blend-mode-container::after {
+.print-image::after {
   content: '';
   position: absolute;
   top: 0;
@@ -141,4 +140,34 @@ z-index: 2;
   mix-blend-mode: saturation;
   pointer-events: none;
   z-index: 3;
+}
+
+.profile-image {
+    max-width: 10rem;
+    height: auto;
+    margin: 5rem 0 1rem;
+    border: 0.15rem solid var(--primary);
+    filter: saturate(0.6);
+}
+
+.article-image figcaption {
+    margin-top: 0.5rem;
+    color: var(--secondary);
+    font-size: 0.85rem;
+}
+
+/* Notes stay readable even when a Chicago citation includes a long URL. */
+.post-content .footnotes {
+    font-size: 0.8rem;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+}
+
+.post-content .footnotes li {
+    margin-bottom: 0.8rem;
+    scroll-margin-top: 1rem;
+}
+
+.post-content sup[id] {
+    scroll-margin-top: 1rem;
 }

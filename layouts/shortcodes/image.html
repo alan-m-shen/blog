@@ -1,0 +1,12 @@
+{{- $src := .Get "src" -}}
+{{- with or (.Page.Resources.Get $src) (resources.Get $src) -}}
+  {{- $src = .RelPermalink -}}
+{{- end -}}
+<figure class="article-image">
+  {{- if eq (.Get "style") "print" }}<span class="print-image">{{ end -}}
+  <img src="{{ $src }}" alt="{{ .Get "alt" }}" loading="lazy" decoding="async"
+    {{- with .Get "width" }} width="{{ . }}"{{ end }}
+    {{- with .Get "height" }} height="{{ . }}"{{ end }}>
+  {{- if eq (.Get "style") "print" }}</span>{{ end -}}
+  {{- with .Get "caption" }}<figcaption>{{ . | markdownify }}</figcaption>{{ end -}}
+</figure>

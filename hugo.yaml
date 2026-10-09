@@ -1,7 +1,8 @@
 baseURL: https://alan-shen.com/
 languageCode: en-us
-title: Alan’s Blog
+title: Alan Shen
 theme: ["PaperMod"]
+disableKinds: ["RSS"]
 
 markup:
   goldmark:
@@ -18,16 +19,11 @@ minify:
   minifyOutput: true
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
-  keywords: [Blog, Portfolio, PaperMod]
+  description: "Alan M. Shen’s personal website. Essays on law, literature, and ideas."
   author: Alan Shen
-  # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
-  disableThemeToggle: false
+  defaultTheme: auto
+  disableThemeToggle: true
 
   ShowReadingTime: true
   ShowShareButtons: false
@@ -44,22 +40,15 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
-  disableThemeToggle: true
-  defaultTheme: auto # auto, dark, light
-
   assets:
-    # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: /favicon.svg
+    favicon16x16: /favicon.png
+    favicon32x32: /favicon.png
+    apple_touch_icon: /favicon.png
+    safari_pinned_tab: /favicon.svg
 
   label:
-    text: "Alan’s Blog"
-    icon: /apple-touch-icon.png
-    iconHeight: 35
+    text: "Alan Shen"
 
   # home-info mode
   homeInfoParams:

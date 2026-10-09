@@ -1,7 +1,8 @@
 {{- with .cxt}} {{/* Apply proper context from dict */}}
 {{- if (and .Params.cover.image (not $.isHidden)) }}
 <figure class="entry-cover">
-    <div class="blend-mode-container">
+    {{- $print := eq .Params.cover.style "print" }}
+    {{- if $print }}<div class="print-image">{{ end }}
     {{- $loading := cond $.IsSingle "eager" "lazy" }}
     {{- $addLink := (and site.Params.cover.linkFullImages $.IsSingle) }}
     {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
@@ -54,6 +55,7 @@
     {{- if $addLink }}
         </a>
     {{- end -}}
+    {{- if $print }}</div>{{ end }}
 
     {{- /*  Display Caption  */}}
     {{- if $.IsSingle }}
@@ -61,7 +63,6 @@
             <figcaption>{{ . | markdownify }}</figcaption>
         {{- end }}
     {{- end }}
-</div>
 </figure>
 {{- end }}{{/* End image */}}
 {{- end -}}{{/* End context */ -}}
