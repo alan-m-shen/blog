@@ -34,6 +34,10 @@ use the same Hugo version and initialize submodules before building.
 - The theme header handles automatic dark mode. The minimal footer intentionally
   omits theme scripts for disabled features (theme toggle, back-to-top, code copy).
 - RSS output is disabled. No Node build step is required.
+- Crawling is disallowed in `robots.txt`, sitemap output is disabled, and pages
+  use PaperMod's `robotsNoIndex` setting. These are crawler instructions, not
+  access controls. Blocked crawlers cannot read page-level noindex directives,
+  so existing search listings may persist. Enforce bot blocks in Cloudflare.
 
 ## Images
 

@@ -2,7 +2,11 @@ baseURL: https://alan-shen.com/
 languageCode: en-us
 title: Alan Shen
 theme: ["PaperMod"]
-disableKinds: ["RSS"]
+disableKinds: ["RSS", "sitemap"]
+
+cascade:
+  params:
+    robotsNoIndex: true
 
 markup:
   goldmark:
