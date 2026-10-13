@@ -71,8 +71,8 @@ stable page numbers use chapter, section, or book-and-line locators. Legal notes
 identify the instrument and relevant articles. No separate bibliography is needed
 for these short essays because the notes supply the full source details.
 
-The lost original references were reconstructed from sources checked on October 9,
-2026; they are not a recovered bibliography. The original publication dates remain
+Citations were rebuilt from sources checked on October 9 and 13, 2026; they are
+not a recovered bibliography. The original publication dates remain
 (with Paradise Lost dated June 2, 2022), and `lastmod` records the revision date.
 
 When deliberately upgrading Hugo or PaperMod, build first and check the home
